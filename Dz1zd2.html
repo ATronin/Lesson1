@@ -1,9 +1,8 @@
 <meta charset="utf-8">
 <script>
-	var dollar = 37;
-	var euro   = 40;
+	const dollar = 37;
+	const euro   = 40;
 	alert ("Конвертер валют.\n\nТекущий курс валют:\nДоллар: 1$ = "+ dollar +" руб.\nЕвро: 1€ = "+ euro +" руб.");
 	var rub = prompt ("Введите сумму в рублях:");
-	alert ();
-
+	alert (rub + " руб." + " = " + (rub / dollar) + " $\n" + rub + " руб." + " = " + (rub / euro) + " €");
 </script>
