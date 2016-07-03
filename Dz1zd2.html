@@ -1,8 +1,26 @@
 <meta charset="utf-8">
 <script>
-	const dollar = 37;
-	const euro   = 40;
+	const dollar = 10;
+	const euro   = 20;
 	alert ("Конвертер валют.\n\nТекущий курс валют:\nДоллар: 1$ = "+ dollar +" руб.\nЕвро: 1€ = "+ euro +" руб.");
-	var rub = prompt ("Введите сумму в рублях:");
-	alert (rub + " руб." + " = " + (rub / dollar) + " $\n" + rub + " руб." + " = " + (rub / euro) + " €");
+	currency = prompt ("Введите название валюты (рубли, доллары, евро):");
+	if (currency == "рубли")
+		{
+			var Rub = prompt("Введите число:");
+			alert (Rub + " руб." + " = " + (Rub / dollar) + " $\n" + Rub + " руб." + " = " + (Rub / euro) + " €");
+		} 
+	else if (currency == "доллары") 
+		{
+			var Dollar = prompt("Введите число:");
+			alert (Dollar + " $" + " = " + (Dollar * dollar) + " руб.\n" + Dollar + " $" + " = " + (Dollar / 2) + " €");
+		}	
+	else if (currency == "евро") 
+		{
+			var Euro = prompt("Введите число:");
+			alert (Euro + " €" + " = " + (Euro * euro) + " руб.\n" + Euro + " €" + " = " + (Euro * 2) + " $");
+		}
+	else
+		{
+			alert("Введено не корректное значение!");
+		};
 </script>
