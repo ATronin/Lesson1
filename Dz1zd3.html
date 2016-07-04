@@ -1,14 +1,44 @@
 <meta charset="utf-8">
 <script>
+	var i_true  = 0;
+	var i_false = 0;
 	alert ("Добрый день!\nДавайте поиграем в загадки");
-	answer = prompt ("Висит груша, нельзя скушать.\nОтвет:");
+	answer = prompt ("Первая загадка\nВисит груша, нельзя скушать.\nОтвет:");
 	if (answer == "лампочка" || answer == "Лампочка" || answer == "лампа" || answer == "Лампа") 
 		{
-			alert ("Поздравляем! Вы угадали!");
+			i_true = ++i_true;
 		} 
 	else 
 		{
-			alert ("К сожалению Вы не угадали.");
+			i_false = ++i_false;
 		};
+	answer = prompt ("Вторая загадка\nЗимой белый, летом серый.\nОтвет:");
+	if (answer == "заяц" || answer == "Заяц") 
+		{
+			i_true = ++i_true;
+		} 
+	else 
+		{
+			i_false = ++i_false;
+		};
+	answer = prompt ("Третья загадка\nРазноцветное коромысло через реку повисло.\nОтвет:");
+	if (answer == "радуга" || answer == "Радуга") 
+		{
+			i_true = ++i_true;
+		} 
+	else 
+		{
+			i_false = ++i_false;
+		};
+	answer = prompt ("Четвертая загадка\nПо горам, по долам, ходит шуба, да кафтан.\nОтвет:");
+	if (answer == "овечка" || answer == "Овечка" || answer == "баран" || answer == "Баран") 
+		{
+			i_true = ++i_true;
+		} 
+	else 
+		{
+			i_false = ++i_false;
+		};
+	alert ("Правильных ответов: " + i_true + "\nНеправильных ответов: " + i_false);			
 	alert ("Игра окончена. До новых встреч.");	
 </script>
